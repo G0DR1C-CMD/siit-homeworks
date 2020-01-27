@@ -1,6 +1,13 @@
 // Display in the console the numbers from 1 to 20
+// created 2 options: column vs row
 
+// option 1 - column
 Array.from(Array(20), (_,i) => console.log(i + 1));
+
+// option 2 - row
+const n = 20;
+const stringOfNumbers = [...Array(n+1).keys()].splice(1).join(' ');
+console.log(stringOfNumbers);
 
 // Display in the console the odd numbers from 1 to 20
 
